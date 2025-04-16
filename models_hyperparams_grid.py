@@ -28,7 +28,7 @@ possible_hyperparams_per_model = {
             'min_samples_leaf': [1]
         },
         'ada_boost': {
-            'base_estimator': [DecisionTreeRegressor(max_depth=6)],
+            'estimator': [DecisionTreeRegressor(max_depth=6)],
             'n_estimators': [100, 200],
             'learning_rate': [0.001, 0.3, 0.50, 0.7, 1.0],
         },
@@ -67,7 +67,7 @@ possible_hyperparams_per_model = {
             'min_samples_leaf': [0.005, 0.05, 0.10],
         },
         'bagging': {
-            "base_estimator": [DecisionTreeRegressor(max_depth=6)],
+            "estimator": [DecisionTreeRegressor(max_depth=6)],
             "n_estimators": [200],
             "max_features": [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
         },
